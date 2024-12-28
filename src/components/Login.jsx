@@ -47,7 +47,7 @@ if(validateEmail(formData.email) && regex.test(formData.password)) {
                 setErrors({...errors, [name]: false})
             }else{
                 setErrors({...errors, [name]: true})
-            }
+            };
         }
         if(name=="password") {
             if(regex.test(value)){
